@@ -4,6 +4,7 @@ marvel={'IronMan'=>'SuperHero','CaptainAmerica'=>'SuperHero','Ghost'=>'SuperVill
 #Colocar na classe String a definição de  colorir as outputs do terminal
 class String
     
+    #definindo os metodos da classe string
     def red;            "\e[31m#{self}\e[0m"#ANSI CODE
 end  
     def cyan;           "\e[36m#{self}\e[0m"#ANSI CODE
@@ -18,16 +19,16 @@ end
 
 
 
-puts "Characters of the DC:\n\n\n".cyan.bold#Chamando as definições criadas na classe String para alterar a cor do terminal
+puts "Characters of the DC:\n\n\n".cyan.bold#Chamando os metodos criados na classe String para alterar a cor do terminal
 dc.each do |key, value|
   
-    puts "#{key} is #{value}\n\n\n".cyan.underline.italic#Chamando as definições criadas na classe String para alterar a cor do terminal
+    puts "#{key} is #{value}\n\n\n".cyan.underline.italic#Chamando os metodos criados na classe String para alterar a cor do terminal
 end
 
 
-puts "Characters of the Marvel:\n\n\n".red.bold#Chamando as definições criadas na classe String para alterar a cor do terminal
+puts "Characters of the Marvel:\n\n\n".red.bold#Chamando os metodos criados na classe String para alterar a cor do terminal
 
 marvel.each do |key , value|
 
-    puts "#{key} is #{value}\n\n\n".red.italic.underline#Chamando as definições criadas na classe String para alterar a cor do terminal
+    puts "#{key} is #{value}\n\n\n".red.italic.underline#Chamando os metodos criados na classe String para alterar a cor do terminal
 end
